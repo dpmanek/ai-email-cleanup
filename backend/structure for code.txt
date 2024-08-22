@@ -1,0 +1,52 @@
+ai-email-cleanup/
+│
+├── backend/                     # Backend (Node.js + Express)
+│   ├── config/                  # Configuration files (e.g., db connection, passport setup)
+│   │   ├── db.js
+│   │   ├── passport.js
+│   ├── controllers/             # Route controllers (business logic)
+│   │   ├── authController.js
+│   │   ├── emailController.js
+│   ├── middleware/              # Custom middleware (e.g., authentication checks)
+│   │   ├── authMiddleware.js
+│   ├── models/                  # Mongoose models (schemas)
+│   │   ├── User.js
+│   │   ├── Email.js
+│   ├── routes/                  # API routes
+│   │   ├── authRoutes.js
+│   │   ├── emailRoutes.js
+│   ├── services/                # External service integrations (e.g., OpenAI, Gmail API)
+│   │   ├── openaiService.js
+│   │   ├── gmailService.js
+│   ├── .env                     # Environment variables
+│   ├── server.js                # Main entry point for the application
+│   ├── package.json             # NPM dependencies and scripts
+│   └── README.md                # Backend documentation
+│
+└── client/                      # Frontend (React.js)
+    ├── public/                  # Static files (e.g., index.html)
+    ├── src/
+    │   ├── components/          # React components
+    │   │   ├── Auth/            # Authentication components
+    │   │   │   ├── Login.js
+    │   │   │   ├── Logout.js
+    │   │   ├── Dashboard/       # Main app components (e.g., dashboard, email list)
+    │   │   │   ├── Dashboard.js
+    │   │   │   ├── EmailList.js
+    │   │   ├── Layout/          # Layout components (e.g., Navbar, Footer)
+    │   │   │   ├── Navbar.js
+    │   │   │   ├── Footer.js
+    │   ├── pages/               # Page components (e.g., Home, Profile)
+    │   │   ├── Home.js
+    │   │   ├── Profile.js
+    │   ├── services/            # API services (Axios requests to the backend)
+    │   │   ├── authService.js
+    │   │   ├── emailService.js
+    │   ├── App.js               # Main React component
+    │   ├── index.js             # Entry point for the React app
+    │   ├── routes.js            # React Router setup (if applicable)
+    │   ├── App.css              # Global styles
+    │   └── index.css            # Root CSS
+    ├── .env                     # Frontend environment variables (if any)
+    ├── package.json             # NPM dependencies and scripts for React
+    └── README.md                # Frontend documentation

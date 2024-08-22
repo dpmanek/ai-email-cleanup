@@ -1,0 +1,15 @@
+{
+  "name": "chatgpt",
+  "version": "1.0.0",
+  "description": "Trying to use open ai for the first time fo node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dpmanek",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.56.0"
+  }
+}
